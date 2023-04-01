@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-shape-divider-bottom-1680279600 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1680279600 svg {
+  position: relative;
+  display: block;
+  width: calc(111% + 1.3px);
+  height: 113px;
+}
+
+.custom-shape-divider-bottom-1680279600 .shape-fill {
+  fill: #3B82F6;
+}
+.spacer {
+  aspect-ratio :960/300;
+  width: 100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+
+}
+.layer1{
+  background-image: url('./assets/wave-haikei.svg');
+}
