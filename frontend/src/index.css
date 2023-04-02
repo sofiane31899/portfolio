@@ -2,34 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-shape-divider-bottom-1680279600 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+.blob{
+    width: 300px;
+    height: 300px;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    background: url('./assets/moi.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    animation: blob 3.7s linear infinite;
+    
 }
-
-.custom-shape-divider-bottom-1680279600 svg {
-  position: relative;
-  display: block;
-  width: calc(111% + 1.3px);
-  height: 113px;
+@keyframes blob {
+    0% ,100%{
+        border-radius: 42% 56% 72% 28% /42% 42% 56% 48%;
+    } 33%{
+        
+            border-radius: 42% 28% 48% 48% /28% 28% 72% 72%;
+        
+    }
+    66%{
+        
+        border-radius: 100% 56% 56% 100% /100% 100% 56% 56%;
+    
 }
-
-.custom-shape-divider-bottom-1680279600 .shape-fill {
-  fill: #3B82F6;
-}
-.spacer {
-  aspect-ratio :960/300;
-  width: 100%;
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:cover;
-
-}
-.layer1{
-  background-image: url('./assets/wave-haikei.svg');
 }
