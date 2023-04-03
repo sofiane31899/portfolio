@@ -15,7 +15,7 @@ function Hero() {
 
   return (
     <div className="flex flex-col-reverse md:flex-row bg-slate-100 h-screen p-[40px] md:pt-[80px]  items-center justify-around  overflow-y-hidden">
-      <div className="max-w-[490px] ">
+      <div className="max-w-[490px] flex-1 ">
         <h1 className="md:font-bold md:text-6xl font-semibold text-4xl pt-5 items-end font-poppins text-gray-800 ">
           Full-Stack MERN <br />
           <div className="flex items-center">
@@ -47,7 +47,7 @@ function Hero() {
           </a>
         </motion.div>
       </div>
-      <div className="blob min-w-[250px]"></div>
+      <div className="blob min-w-[250px] max-w-[450px] flex-1"></div>
     </div>
   );
 }

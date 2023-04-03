@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 function About() {
   return (
     <div className="flex flex-col-reverse md:flex-row-reverse  h-screen p-[40px] md:pt-[80px] pt-24  items-center justify-around  overflow-y-hidden">
-      <div className=" space-y-3 font-poppins text-gray-500 md:w-[550px]  text-center md:text-start ">
+      <div className=" space-y-3 font-poppins text-gray-500 flex-1 max-w-[550px] text-center md:text-start ">
         <h1 className="text-blue-500 font-bold">ABOUT ME</h1>
         <h2 className="font-extrabold text-2xl text-gray-800">
           A dedicated Full-Stack MERN Developer
@@ -28,7 +28,7 @@ function About() {
           delivering exceptional web applications.
         </p>
       </div>
-      <div className=" min-w-[300px] w-[300px] h-[300px] md:h-[380px] md:pr-6 lg:w-[400px] md:w-[300px] pb-4 relative  ">
+      <div className="  flex-1 max-w-[400px]  md:pr-6 pb-4 relative md:h-[450px] lg:h-[380px]  ">
         <img src={pc} alt="pc" className="w-full h-full rounded-2xl " />
         <div className="bg-white hidden xl:block w-[170px] h-[170px]  rounded-full absolute bottom-[-40px] right-[-40px] ">
           <motion.img
