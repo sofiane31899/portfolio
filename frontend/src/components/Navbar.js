@@ -17,6 +17,9 @@ function Navbar() {
           Projects
         </li>
         <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
+          Skills
+        </li>
+        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
           Contact
         </li>
       </ul>
@@ -32,6 +35,7 @@ function Navbar() {
             <li className="cursor-pointer  hover:text-blue-600 ">Home</li>
             <li className="cursor-pointer  hover:text-blue-600 ">About</li>
             <li className="cursor-pointer  hover:text-blue-600 ">Projects</li>
+            <li className="cursor-pointer  hover:text-blue-600 ">skills</li>
             <li className="cursor-pointer  hover:text-blue-600 ">Contact</li>
           </ul>
         )}
