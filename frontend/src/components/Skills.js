@@ -28,12 +28,12 @@ function Skills() {
     { name: "HTML", icon: html5, pourcentage: "80%" },
   ];
   return (
-    <div className="snap-start pt-[100px]">
-      <h1 className="text-blue-500 font-bold py-5 px-10 md:px-[100px]">
+    <div className="snap-start pt-[100px] flex flex-col items-start justify-center h-screen  ">
+      <h1 className="text-blue-500 font-bold text-2xl py-5 px-10 mb-5 md:pl-[100px]">
         {" "}
         skills
       </h1>
-      <div className="flex flex-wrap cursor-pointer  md:gap-20 gap-10 px-[30px] md:px-[100px] ">
+      <div className="flex flex-wrap   md:gap-20 gap-10 px-[30px] md:px-[100px] ">
         {skills.map((elem) => (
           <Skill tech={elem} />
         ))}
