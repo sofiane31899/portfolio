@@ -11,7 +11,9 @@ function Navbar() {
       </div>
 
       <ul className="md:flex hidden font-semibold font-poppins text-gray-700  space-x-6">
-        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">Home</li>
+        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
+          <a href="#about">Home</a>
+        </li>
         <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">About</li>
         <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
           Projects

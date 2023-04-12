@@ -3,12 +3,12 @@ import React from "react";
 import css from "./../assets/techs/css.png";
 import js from "./../assets/techs/js.png";
 import redux from "./../assets/techs/redux.png";
-import sql from "./../assets/techs/sql.png";
+import sql from "./../assets/techs/sql.jpg";
 import tailwind from "./../assets/techs/tailwind.png";
 import express from "./../assets/techs/express.png";
 import firebase from "./../assets/techs/firebase.png";
 import html5 from "./../assets/techs/html5.png";
-import mongo from "./../assets/techs/mongo.png";
+import mongo from "./../assets/techs/mongo.svg";
 import nodejs from "./../assets/techs/nodejs.png";
 import react from "./../assets/techs/react.png";
 import Skill from "./Skill";
@@ -33,7 +33,7 @@ function Skills() {
         {" "}
         skills
       </h1>
-      <div className="flex flex-wrap   md:gap-20 gap-10 px-[30px] md:px-[100px] ">
+      <div className="flex flex-wrap   md:gap-20 gap-10 px-[30px] md:px-[100px]  ">
         {skills.map((elem) => (
           <Skill tech={elem} />
         ))}

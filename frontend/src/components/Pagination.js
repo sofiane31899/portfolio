@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
-function Pagination() {
-  const [length, setLength] = useState(12);
-  const [currentProject, setCurrentProject] = useState(4);
+function Pagination({ length, currentProject }) {
   return (
     <div className="flex items-center justify-center space-x-1">
       {Array.from({ length })
