@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Project from "./Project";
 
 function Projects() {
-  const [currentProject, setCurrentProject] = useState(20);
+  const [currentProject, setCurrentProject] = useState(2);
   const projects = [
     {
       titre: "ChatAPP",
@@ -25,67 +25,42 @@ function Projects() {
       live: "",
     },
     {
-      titre: "app ",
+      titre: "Krilli APP ",
       description:
-        " lorem ipsu hudirh djskie juzijds fjsijfn idfnskj sfjkjkds ",
+        "Our property rental application is a modern and user-friendly platform for finding and renting properties online. Built with React and Firebase, it offers a fast and reliable rental process, with clear communication and transparency throughout.",
       image: "",
-      technologies: ["react", "tailwind", "framer motion"],
+      technologies: ["react", "firebase"],
       codeURL: "",
       live: "",
     },
     {
-      titre: "app ",
+      titre: "Krilli APP ",
       description:
-        " lorem ipsu hudirh djskie juzijds fjsijfn idfnskj sfjkjkds ",
+        "Our property rental application is a modern and user-friendly platform for finding and renting properties online. Built with React and Firebase, it offers a fast and reliable rental process, with clear communication and transparency throughout.",
       image: "",
-      technologies: ["react", "tailwind", "framer motion"],
+      technologies: ["react", "firebase"],
       codeURL: "",
       live: "",
     },
     {
-      titre: "app ",
+      titre: "Krilli APP ",
       description:
-        " lorem ipsu hudirh djskie juzijds fjsijfn idfnskj sfjkjkds ",
+        "Our property rental application is a modern and user-friendly platform for finding and renting properties online. Built with React and Firebase, it offers a fast and reliable rental process, with clear communication and transparency throughout.",
       image: "",
-      technologies: ["react", "tailwind", "framer motion"],
-      codeURL: "",
-      live: "",
-    },
-    {
-      titre: "app ",
-      description:
-        " lorem ipsu hudirh djskie juzijds fjsijfn idfnskj sfjkjkds ",
-      image: "",
-      technologies: ["react", "tailwind", "framer motion"],
-      codeURL: "",
-      live: "",
-    },
-    {
-      titre: "app ",
-      description:
-        " lorem ipsu hudirh djskie juzijds fjsijfn idfnskj sfjkjkds ",
-      image: "",
-      technologies: ["react", "tailwind", "framer motion"],
-      codeURL: "",
-      live: "",
-    },
-    {
-      titre: "app ",
-      description:
-        " lorem ipsu hudirh djskie juzijds fjsijfn idfnskj sfjkjkds ",
-      image: "",
-      technologies: ["react", "tailwind", "framer motion"],
+      technologies: ["react", "firebase"],
       codeURL: "",
       live: "",
     },
   ];
 
   return (
-    <div className="h-screen bg-slate-100 flex flex-col items-center overflow-x-scroll w-[1050px] m-auto justify-end ">
-      <div className="flex items-center justify-evenly m-[140px] ">
-        {projects.map((elem, index) => (
-          <Project key={index} project={elem} />
-        ))}
+    <div className="h-screen flex flex-col  pb-[50px] pt-[120px] justify-center items-center">
+      <div className="  flex flex-col items-start m-auto   justify-start w-[1100px] snap-x scrollbar-hide overflow-x-scroll   ">
+        <div className="flex items-center justify-start space-x-10 px-[50px]  snap-center flex-grow ">
+          {projects.map((elem, index) => (
+            <Project key={index} project={elem} />
+          ))}
+        </div>
       </div>
       <div className="sticky left-auto">
         <Pagination length={projects.length} currentProject={currentProject} />

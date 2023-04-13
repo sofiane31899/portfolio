@@ -12,17 +12,19 @@ function Navbar() {
 
       <ul className="md:flex hidden font-semibold font-poppins text-gray-700  space-x-6">
         <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
-          <a href="#about">Home</a>
-        </li>
-        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">About</li>
-        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
-          Projects
+          <a href="#hero">Home</a>
         </li>
         <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
-          Skills
+          <a href="#about">About</a>
         </li>
         <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
-          Contact
+          <a href="#projects">Projects</a>
+        </li>
+        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
+          <a href="#skills">Skills</a>
+        </li>
+        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
+          <a href="#contact">Contact</a>
         </li>
       </ul>
       <div className="md:hidden">
@@ -34,11 +36,25 @@ function Navbar() {
         />
         {toggle && (
           <ul className="md:hidden absolute top-[60px] right-6 flex font-semibold bg-gray-200 h-12 items-center rounded-xl px-6 font-poppins text-gray-700 space-x-6">
-            <li className="cursor-pointer  hover:text-blue-600 ">Home</li>
-            <li className="cursor-pointer  hover:text-blue-600 ">About</li>
-            <li className="cursor-pointer  hover:text-blue-600 ">Projects</li>
-            <li className="cursor-pointer  hover:text-blue-600 ">skills</li>
-            <li className="cursor-pointer  hover:text-blue-600 ">Contact</li>
+            <li className="cursor-pointer  hover:text-blue-600 ">
+              <a href="#hero">Home</a>
+            </li>
+            <li className="cursor-pointer  hover:text-blue-600 ">
+              {" "}
+              <a href="#about">About</a>
+            </li>
+            <li className="cursor-pointer  hover:text-blue-600 ">
+              {" "}
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="cursor-pointer  hover:text-blue-600 ">
+              {" "}
+              <a href="#skills">Skills</a>
+            </li>
+            <li className="cursor-pointer  hover:text-blue-600 ">
+              {" "}
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         )}
       </div>

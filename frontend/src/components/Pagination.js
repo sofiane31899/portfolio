@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Pagination({ length, currentProject }) {
   return (
-    <div className="flex items-center justify-center space-x-1">
+    <div className="flex items-center  justify-center space-x-1">
       {Array.from({ length })
         .slice(0, currentProject)
         .map((elem) => (
