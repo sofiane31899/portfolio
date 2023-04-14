@@ -4,6 +4,8 @@ import hand from "./../assets/hand.png";
 import gitimg from "./../assets/githubimg.svg";
 import linkedin from "./../assets/linkedin.svg";
 import { motion } from "framer-motion";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Hero() {
   const [text, count] = useTypewriter({
@@ -37,13 +39,13 @@ function Hero() {
           className="flex items-center space-x-3 pt-5"
         >
           <a href="https://github.com/sofiane31899" target="_blank">
-            <img src={gitimg} alt="git" className="text-red-400" />
+            <GitHubIcon sx={{ fontSize: 40, color: "#1e293b" }} />
           </a>
           <a
             href="https://www.linkedin.com/in/rabah-bacha-87818620b/"
             target="_blank"
           >
-            <img src={linkedin} alt="git" className="text-red-400" />
+            <LinkedInIcon sx={{ fontSize: 40, color: "#1e293b" }} />
           </a>
         </motion.div>
       </div>

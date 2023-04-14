@@ -2,19 +2,13 @@ import React, { useState } from "react";
 import Pagination from "./Pagination";
 import krilli from "./../assets/projects/krilli.png";
 import Project from "./Project";
+import frontendapp from "./../assets/frontendapp.PNG";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 function Projects() {
   const [currentProject, setCurrentProject] = useState(1);
   const projects = [
-    {
-      titre: "ChatAPP",
-      description:
-        "A real-time chat application is a fast and reliable messaging platform that allows users to chat with each other in real-time. The application was built using the MERN stack,Node.js, and Socket.IO for real-time communication",
-      image: "",
-      technologies: ["MERN stack", "socket.io"],
-      codeURL: "",
-      live: "",
-    },
     {
       titre: "Krilli APP ",
       description:
@@ -28,25 +22,7 @@ function Projects() {
       titre: "Krilli APP ",
       description:
         "Our property rental application is a modern and user-friendly platform for finding and renting properties online. Built with React and Firebase, it offers a fast and reliable rental process, with clear communication and transparency throughout.",
-      image: "",
-      technologies: ["react", "firebase"],
-      codeURL: "",
-      live: "",
-    },
-    {
-      titre: "Krilli APP ",
-      description:
-        "Our property rental application is a modern and user-friendly platform for finding and renting properties online. Built with React and Firebase, it offers a fast and reliable rental process, with clear communication and transparency throughout.",
-      image: "",
-      technologies: ["react", "firebase"],
-      codeURL: "",
-      live: "",
-    },
-    {
-      titre: "Krilli APP ",
-      description:
-        "Our property rental application is a modern and user-friendly platform for finding and renting properties online. Built with React and Firebase, it offers a fast and reliable rental process, with clear communication and transparency throughout.",
-      image: "",
+      image: frontendapp,
       technologies: ["react", "firebase"],
       codeURL: "",
       live: "",
@@ -66,27 +42,24 @@ function Projects() {
       <h1 className="text-blue-500 font-bold text-2xl  px-10 mb-5 md:pl-[100px]">
         projects
       </h1>
-      <div className="flex items-center md:h-[80%] mx-2  justify-center space-x-10  ">
+      <div className="flex h-max  items-center md:h-[80%] mx-2  justify-center space-x-10  ">
         {<Project key={currentProject} project={projects[currentProject]} />}
       </div>
 
       <div className="">
-        <Pagination
-          length={projects.length - 1}
-          currentProject={currentProject}
-        />
+        <Pagination length={projects.length} currentProject={currentProject} />
       </div>
       <div
         onClick={() => rightClick()}
-        className="absolute top-[50%] right-4 rounded-full bg-black text-white"
+        className="absolute top-[50%] md:right-[10%] right-3 rounded-full bg-gray-600 text-white"
       >
-        right
+        <ChevronRightIcon />
       </div>
       <div
         onClick={() => leftClick()}
-        className="absolute top-[50%] left-4 rounded-full bg-black text-white"
+        className="absolute top-[50%] md:left-[10%] left-3 rounded-full bg-gray-600 text-white"
       >
-        left
+        <ChevronLeftIcon />
       </div>
     </div>
   );
