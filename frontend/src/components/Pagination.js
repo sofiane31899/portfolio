@@ -5,16 +5,16 @@ function Pagination({ length, currentProject }) {
     <div className="flex items-center  justify-center space-x-1">
       {Array.from({ length })
         .slice(0, currentProject)
-        .map((elem) => (
+        .map((elem, index) => (
           <div
-            key={length}
+            key={index}
             className="rounded-full w-2 h-2 bg-blue-700 border"
           ></div>
         ))}
       {Array.from({ length })
         .slice(currentProject, length)
-        .map((elem) => (
-          <div key={length} className="rounded-full w-2 h-2 bg-gray-200"></div>
+        .map((elem, index) => (
+          <div key={index} className="rounded-full w-2 h-2 bg-gray-200"></div>
         ))}
     </div>
   );

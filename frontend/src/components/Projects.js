@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Pagination from "./Pagination";
-import { motion } from "framer-motion";
+import krilli from "./../assets/projects/krilli.png";
 import Project from "./Project";
 
 function Projects() {
-  const [currentProject, setCurrentProject] = useState(2);
+  const [currentProject, setCurrentProject] = useState(1);
   const projects = [
     {
       titre: "ChatAPP",
@@ -19,7 +19,7 @@ function Projects() {
       titre: "Krilli APP ",
       description:
         "Our property rental application is a modern and user-friendly platform for finding and renting properties online. Built with React and Firebase, it offers a fast and reliable rental process, with clear communication and transparency throughout.",
-      image: "",
+      image: krilli,
       technologies: ["react", "firebase"],
       codeURL: "",
       live: "",
@@ -53,17 +53,40 @@ function Projects() {
     },
   ];
 
+  const leftClick = () => {
+    if (currentProject != 0) setCurrentProject((prev) => prev - 1);
+  };
+  const rightClick = () => {
+    if (currentProject < projects.length - 1)
+      setCurrentProject((prev) => prev + 1);
+  };
+
   return (
-    <div className="h-screen flex flex-col  pb-[50px] pt-[120px] justify-center items-center">
-      <div className="  flex flex-col items-start m-auto   justify-start w-[1100px] snap-x scrollbar-hide overflow-x-scroll   ">
-        <div className="flex items-center justify-start space-x-10 px-[50px]  snap-center flex-grow ">
-          {projects.map((elem, index) => (
-            <Project key={index} project={elem} />
-          ))}
-        </div>
+    <div className="h-screen flex flex-col   pt-[80px] relative space-y-1 ">
+      <h1 className="text-blue-500 font-bold text-2xl  px-10 mb-5 md:pl-[100px]">
+        projects
+      </h1>
+      <div className="flex items-center md:h-[80%] mx-2  justify-center space-x-10  ">
+        {<Project key={currentProject} project={projects[currentProject]} />}
       </div>
-      <div className="sticky left-auto">
-        <Pagination length={projects.length} currentProject={currentProject} />
+
+      <div className="">
+        <Pagination
+          length={projects.length - 1}
+          currentProject={currentProject}
+        />
+      </div>
+      <div
+        onClick={() => rightClick()}
+        className="absolute top-[50%] right-4 rounded-full bg-black text-white"
+      >
+        right
+      </div>
+      <div
+        onClick={() => leftClick()}
+        className="absolute top-[50%] left-4 rounded-full bg-black text-white"
+      >
+        left
       </div>
     </div>
   );

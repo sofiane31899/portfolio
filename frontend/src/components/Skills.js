@@ -34,8 +34,8 @@ function Skills() {
         skills
       </h1>
       <div className="flex flex-wrap   md:gap-20 gap-10 px-[30px] md:px-[100px]  ">
-        {skills.map((elem) => (
-          <Skill tech={elem} />
+        {skills.map((elem, index) => (
+          <Skill key={index} tech={elem} />
         ))}
       </div>
     </div>
