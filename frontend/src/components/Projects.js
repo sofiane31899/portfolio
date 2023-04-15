@@ -15,16 +15,16 @@ function Projects() {
         "Our property rental application is a modern and user-friendly platform for finding and renting properties online. Built with React and Firebase, it offers a fast and reliable rental process, with clear communication and transparency throughout.",
       image: krilli,
       technologies: ["react", "firebase"],
-      codeURL: "",
-      live: "",
+      codeURL: "https://krilli-app.web.app/",
+      live: "https://krilli-app.web.app/",
     },
     {
-      titre: "Krilli APP ",
+      titre: "frontend",
       description:
-        "Our property rental application is a modern and user-friendly platform for finding and renting properties online. Built with React and Firebase, it offers a fast and reliable rental process, with clear communication and transparency throughout.",
+        " this is a web application that I built using React, Framer Motion, and Tailwind CSS. The app is designed to provide an engaging and interactive user experience, with fluid animations and transitions that bring the interface to life.",
       image: frontendapp,
-      technologies: ["react", "firebase"],
-      codeURL: "",
+      technologies: ["react", "tailwind", "framer motion"],
+      codeURL: "https://github.com/sofiane31899/application",
       live: "",
     },
   ];
@@ -51,13 +51,13 @@ function Projects() {
       </div>
       <div
         onClick={() => rightClick()}
-        className="absolute top-[50%] md:right-[10%] right-3 rounded-full bg-gray-600 text-white"
+        className="absolute top-[50%] md:right-[10%] right-3 cursor-pointer rounded-full bg-gray-600 text-white"
       >
         <ChevronRightIcon />
       </div>
       <div
         onClick={() => leftClick()}
-        className="absolute top-[50%] md:left-[10%] left-3 rounded-full bg-gray-600 text-white"
+        className="absolute top-[50%] md:left-[10%] left-3 cursor-pointer rounded-full bg-gray-600 text-white"
       >
         <ChevronLeftIcon />
       </div>

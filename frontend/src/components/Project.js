@@ -1,9 +1,10 @@
 import React from "react";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
 
 function Project({ project }) {
-  console.log(project);
   return (
-    <div className="md:flex border-2 p-1 items-center  shadow-md rounded-2xl justify-around md:h-[100%]   ">
+    <div className="md:flex md:border-2 p-1 items-center  shadow-md rounded-2xl justify-around md:h-[100%]   ">
       <div className="flex-1 h-full   max-w-[400px] sm:max-w-[500px] md:max-w-[550px] flex justify-center m-auto items-center py-3 px-2 ">
         <img
           src={project.image}
@@ -27,8 +28,16 @@ function Project({ project }) {
           ))}
         </div>
         <div className="flex justify-center py-2 space-x-16 items-center">
-          <div className="bg-white ">code</div>
-          <div className="bg-white ">test</div>
+          <div className="bg-white  cursor-pointer hover:scale-105 ">
+            <a href={project.codeURL}>
+              <GitHubIcon /> code
+            </a>
+          </div>
+          <div className="bg-white cursor-pointer hover:scale-105 ">
+            <a href={project.live}>
+              <LanguageIcon /> live test
+            </a>
+          </div>
         </div>
       </div>
     </div>
