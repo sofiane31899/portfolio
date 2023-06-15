@@ -24,8 +24,8 @@ function Projects() {
         " this is a web application that I built using React, Framer Motion, and Tailwind CSS. The app is designed to provide an engaging and interactive user experience, with fluid animations and transitions that bring the interface to life.",
       image: frontendapp,
       technologies: ["react", "tailwind", "framer motion"],
-      codeURL: "https://github.com/sofiane31899/application",
-      live: "",
+      codeURL: "https://github.com/sofiane31899/frontend-application",
+      live: "https://sofiane31899.github.io/frontend-application/",
     },
   ];
 
