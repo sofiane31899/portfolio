@@ -31,7 +31,7 @@ function Skills() {
     <div className="snap-start pt-[100px] flex flex-col items-start justify-center h-screen  ">
       <h1 className="text-blue-500 font-bold text-2xl py-5 px-10 mb-5 md:pl-[100px]">
         {" "}
-        skills
+        Skills
       </h1>
       <div className="flex flex-wrap   md:gap-20 gap-10 px-[30px] md:px-[100px]  ">
         {skills.map((elem, index) => (

@@ -5,7 +5,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 function Project({ project }) {
   return (
     <div className="md:flex md:border-2 p-1 items-center  shadow-md rounded-2xl justify-around md:h-[100%]   ">
-      <div className="flex-1 h-full   max-w-[400px] sm:max-w-[500px] md:max-w-[550px] flex justify-center m-auto items-center py-3 px-2 ">
+      <div className="flex-1 h-full   max-w-[400px] sm:max-w-[500px] md:w-[550px] flex justify-center m-auto items-center py-3 px-2 ">
         <img
           src={project.image}
           className="w-full h-full rounded-xl shadow-md"
@@ -21,8 +21,7 @@ function Project({ project }) {
           {project.technologies.map((elem, index) => (
             <div
               key={index}
-              className="bg-white text-gray-700 text-lg font-semibold px-3 shadow-sm py-2"
-            >
+              className="bg-white text-gray-700 text-lg font-semibold px-3 shadow-sm py-2">
               {elem}
             </div>
           ))}

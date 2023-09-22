@@ -8,7 +8,7 @@ function Contact() {
     <div className="flex flex-col justify-center h-screen  pt-[100px] ">
       <h1 className="text-blue-500 font-bold text-2xl py-5 font-poppins  px-10  md:pl-[100px]">
         {" "}
-        contact
+        Contact
       </h1>
 
       <div className="flex flex-1 items-center  mb-32 justify-start flex-wrap pl-5 space-x-3  md:pl-[100px]">
@@ -58,8 +58,12 @@ function Contact() {
       <div className="bg-gray-900 text-white flex justify-around items-center sticky h-[80px]  ">
         <p>Copyright © 2023. All rights are reserved</p>
         <div>
-          <LinkedInIcon sx={{ fontSize: 40 }} />
-          <GitHubIcon sx={{ fontSize: 40 }} />
+          <a href="https://www.linkedin.com/in/rabah-bacha-87818620b/">
+            <LinkedInIcon sx={{ fontSize: 40 }} />
+          </a>
+          <a href="https://github.com/sofiane31899">
+            <GitHubIcon sx={{ fontSize: 40 }} />
+          </a>
         </div>
       </div>
     </div>
