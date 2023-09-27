@@ -1,11 +1,11 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import hand from "./../assets/hand.png";
-import gitimg from "./../assets/githubimg.svg";
-import linkedin from "./../assets/linkedin.svg";
+
 import { motion } from "framer-motion";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { BiLogoUpwork } from "react-icons/bi";
 
 function Hero() {
   const [text, count] = useTypewriter({
@@ -36,17 +36,18 @@ function Hero() {
           initial={{ opacity: 0, x: "100vh" }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 11, duration: 2 }}
-          className="flex items-center space-x-3 pt-5"
-        >
-          <a href="https://github.com/sofiane31899" target="_blank">
+          className="flex items-center space-x-3 pt-5">
+          <a href="https://github.com/sofiane31899">
             <GitHubIcon sx={{ fontSize: 40, color: "#1e293b" }} />
           </a>
-          <a
-            href="https://www.linkedin.com/in/rabah-bacha-87818620b/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/rabah-bacha-87818620b/">
             <LinkedInIcon sx={{ fontSize: 40, color: "#1e293b" }} />
           </a>
+          <div className="bg-[#1e293b] h-[32px] w-[32px] rounded-md flex justify-center items-center ">
+            <a href="https://www.upwork.com/freelancers/~0193d823d7fda4a956">
+              <BiLogoUpwork className="text-white text-2xl" />
+            </a>
+          </div>
         </motion.div>
       </div>
       <div className="blob min-w-[250px] max-w-[450px] flex-1"></div>
