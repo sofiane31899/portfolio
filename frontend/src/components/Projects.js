@@ -21,14 +21,14 @@ function Projects() {
       live: "https://krilli-app.web.app/",
     },
     {
-      titre: "frontend",
+      titre: "GymShark clone",
       description:
-        " this is a web application that I built using React, and Tailwind CSS. The app is designed to provide an engaging and interactive user experience, with fluid animations and transitions that bring the interface to life.",
+        " My GymShark Clone project is a web application that replicates the popular online fitness and activewear store, GymShark, using modern web development technologies such as React and Tailwind CSS. This clone aims to provide users with a similar shopping experience while showcasing the capabilities of these powerful front-end tools.",
       image:
-        "https://api.apify.com/v2/key-value-stores/07uNli0czsVG5ggZa/records/sofiane31899.github.io-scroll_original",
+        "https://api.apify.com/v2/key-value-stores/ywOHKGYFw3xRGvhy3/records/sofiane31899.github.io-scroll_original",
       technologies: ["react", "tailwind"],
-      codeURL: "https://github.com/sofiane31899/frontend-application",
-      live: "https://sofiane31899.github.io/frontend-application/",
+      codeURL: "https://github.com/sofiane31899/GYM",
+      live: "https://sofiane31899.github.io/GYM/",
     },
     {
       titre: "Medical clinic",
@@ -48,6 +48,16 @@ function Projects() {
       technologies: ["react", "mongodb", "express"],
       codeURL: "https://github.com/sofiane31899/netflix",
       live: " https://649ef60a50d4bf0b6f7df726--subtle-bublanina-41761e.netlify.app/",
+    },
+    {
+      titre: "Credit Card",
+      description:
+        " this is a web application that I built using React, and Tailwind CSS. The app is designed to provide an engaging and interactive user experience, with fluid animations and transitions that bring the interface to life.",
+      image:
+        "https://api.apify.com/v2/key-value-stores/07uNli0czsVG5ggZa/records/sofiane31899.github.io-scroll_original",
+      technologies: ["react", "tailwind"],
+      codeURL: "https://github.com/sofiane31899/frontend-application",
+      live: "https://sofiane31899.github.io/frontend-application/",
     },
   ];
 
@@ -74,7 +84,7 @@ function Projects() {
       <div
         onClick={() => rightClick()}
         className={`${
-          currentProject == 3 ? "hidden" : "group-hover:block"
+          currentProject == 4 ? "hidden" : "group-hover:block"
         } absolute top-[50%] md:right-[10%] hidden right-3 cursor-pointer rounded-full text-2xl  text-gray-800`}>
         <ChevronRightIcon sx={{ fontSize: 40 }} />
       </div>
