@@ -38,23 +38,39 @@ function Navbar() {
           onClick={() => setToggle((prev) => !prev)}
         />
         {toggle && (
-          <ul className="md:hidden absolute top-[60px] right-6 flex font-semibold bg-gray-200 h-12 items-center rounded-xl px-6 font-poppins text-gray-700 space-x-6">
-            <li className="cursor-pointer  hover:text-blue-600 ">
+          <ul className="md:hidden absolute text-sm top-[60px] right-6 flex font-semibold bg-gray-200 h-12 items-center rounded-xl px-6 font-poppins text-gray-700 space-x-6">
+            <li
+              onClick={() => setToggle((prev) => !prev)}
+              className="cursor-pointer      hover:text-blue-600 ">
               <a href="#hero">Home</a>
             </li>
-            <li className="cursor-pointer  hover:text-blue-600 ">
+            <li
+              onClick={() => setToggle((prev) => !prev)}
+              className="cursor-pointer  hover:text-blue-600 ">
               {" "}
               <a href="#about">About</a>
             </li>
-            <li className="cursor-pointer  hover:text-blue-600 ">
+            <li
+              onClick={() => setToggle((prev) => !prev)}
+              className="cursor-pointer  hover:text-blue-600 ">
+              {" "}
+              <a href="#about">Resume</a>
+            </li>
+            <li
+              onClick={() => setToggle((prev) => !prev)}
+              className="cursor-pointer  hover:text-blue-600 ">
               {" "}
               <a href="#projects">Projects</a>
             </li>
-            <li className="cursor-pointer  hover:text-blue-600 ">
+            <li
+              onClick={() => setToggle((prev) => !prev)}
+              className="cursor-pointer  hover:text-blue-600 ">
               {" "}
               <a href="#skills">Skills</a>
             </li>
-            <li className="cursor-pointer  hover:text-blue-600 ">
+            <li
+              onClick={() => setToggle((prev) => !prev)}
+              className="cursor-pointer  hover:text-blue-600 ">
               {" "}
               <a href="#contact">Contact</a>
             </li>
