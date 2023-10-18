@@ -16,7 +16,7 @@ function Hero() {
   });
 
   return (
-    <div className="flex flex-col-reverse md:flex-row bg-slate-100 h-screen p-[40px] md:pt-[80px]  items-center justify-around  overflow-y-hidden">
+    <div className="flex flex-col-reverse md:flex-row bg-slate-100 min-h-screen p-[40px] md:pt-[80px]  items-center justify-around  overflow-y-hidden">
       <div className="max-w-[490px] flex-1 ">
         <h1 className="md:font-bold md:text-6xl font-semibold text-4xl pt-5 items-end font-poppins text-gray-800 ">
           Full-Stack MERN <br />
@@ -33,7 +33,7 @@ function Hero() {
           {text} <Cursor />
         </div>
         <motion.div
-          initial={{ opacity: 0, x: "100vh" }}
+          initial={{ opacity: 0, x: "100vw" }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 11, duration: 2 }}
           className="flex items-center space-x-3 pt-5">
@@ -50,7 +50,7 @@ function Hero() {
           </div>
         </motion.div>
       </div>
-      <div className="blob min-w-[250px] max-w-[450px] flex-1"></div>
+      <div className="blob min-w-[250px] min-h-[250px] max-w-[450px] flex-1"></div>
     </div>
   );
 }

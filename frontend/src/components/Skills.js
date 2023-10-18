@@ -28,7 +28,7 @@ function Skills() {
     { name: "HTML", icon: html5, pourcentage: "80%" },
   ];
   return (
-    <div className="snap-start pt-[100px] flex flex-col items-start justify-center h-screen  ">
+    <div className=" flex flex-col items-start justify-center min-h-screen  ">
       <h1 className="text-blue-500 font-bold text-2xl py-5 px-10 mb-5 md:pl-[100px]">
         {" "}
         Skills

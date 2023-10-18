@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function About() {
   return (
-    <div className="flex flex-col-reverse md:flex-row-reverse  h-screen p-[40px] md:pt-[80px] pt-24  items-center justify-around  overflow-y-hidden">
+    <div className="flex flex-col-reverse md:flex-row-reverse  min-h-screen p-[40px] md:pt-[80px] pt-24  items-center justify-around  overflow-y-hidden">
       <div className=" space-y-3 font-poppins text-gray-500 flex-1 max-w-[550px] text-center md:text-start ">
         <h1 className="text-blue-500 font-bold">ABOUT ME</h1>
         <h2 className="font-extrabold text-2xl text-gray-800">

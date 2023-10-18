@@ -4,24 +4,28 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
   return (
-    <div className="h-screen snap-y snap-mandatory overflow-scroll scroll-smooth z-0 ">
+    <div className="">
       <Navbar />
-      <section id="hero" className="snap-start">
+      <section id="hero">
         <Hero />
       </section>
-      <section id="about" className="snap-start h-screen">
+      <section id="about">
         <About />
       </section>
-      <section id="projects" className="snap-center h-screen">
+      <section id="resume">
+        <Resume />
+      </section>
+      <section id="projects">
         <Projects />
       </section>
-      <section id="skills" className="snap-center h-screen">
+      <section id="skills">
         <Skills />
       </section>
-      <section id="contact" className="snap-center h-screen">
+      <section id="contact">
         <Contact />
       </section>
     </div>

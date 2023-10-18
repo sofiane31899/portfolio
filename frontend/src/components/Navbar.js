@@ -5,25 +5,28 @@ import close from "./../assets/close.svg";
 function Navbar() {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="w-full  h-[80px] flex justify-between px-10 lg:px-20 items-center sticky z-10 bg-white top-0 shadow-sm">
+    <div className="w-full  h-[80px] flex justify-between border-b px-10 lg:px-20 items-center sticky z-10 bg-white top-0 shadow-sm">
       <div className="font-bold text-gray-700  text-xl ">
         <h1 className="font-poppins">Bacha.dev</h1>
       </div>
 
-      <ul className="md:flex hidden font-semibold font-poppins text-gray-700  space-x-6">
-        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
+      <ul className="md:flex hidden font-semibold font-poppins text-gray-700  h-[80px] space-x-6">
+        <li className="cursor-pointer  hover:text-blue-600 px-2  hover:border-b-2 border-blue-500 py-6">
           <a href="#hero">Home</a>
         </li>
-        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
+        <li className="cursor-pointer  hover:text-blue-600 px-2  hover:border-b-2 border-blue-500 py-6">
           <a href="#about">About</a>
         </li>
-        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
+        <li className="cursor-pointer  hover:text-blue-600 px-2  hover:border-b-2 border-blue-500 py-6">
+          <a href="#resume">Resume</a>
+        </li>
+        <li className="cursor-pointer  hover:text-blue-600 px-2  hover:border-b-2 border-blue-500 py-6">
           <a href="#projects">Projects</a>
         </li>
-        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
+        <li className="cursor-pointer  hover:text-blue-600 px-2  hover:border-b-2 border-blue-500 py-6">
           <a href="#skills">Skills</a>
         </li>
-        <li className="cursor-pointer  hover:text-blue-600 px-2 py-3">
+        <li className="cursor-pointer  hover:text-blue-600 px-2  hover:border-b-2 border-blue-500 py-6">
           <a href="#contact">Contact</a>
         </li>
       </ul>

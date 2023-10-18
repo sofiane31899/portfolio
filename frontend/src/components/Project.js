@@ -28,14 +28,22 @@ function Project({ project }) {
         </div>
         <div className="flex justify-center py-2 space-x-16 items-center">
           <div className="bg-white  cursor-pointer hover:scale-105 ">
-            <a href={project.codeURL}>
-              <GitHubIcon /> code
+            <a href={project.codeURL} className="flex space-x-2">
+              <GitHubIcon />{" "}
+              <p>
+                {project.titre === "Krilli APP" ||
+                project.titre === "Medical clinic"
+                  ? "private"
+                  : "code"}
+              </p>
             </a>
           </div>
           <div className="bg-white cursor-pointer hover:scale-105 ">
-            <a href={project.live}>
-              <LanguageIcon /> live test
-            </a>
+            {project?.titre !== "Medical clinic" && (
+              <a href={project.live}>
+                <LanguageIcon /> live test
+              </a>
+            )}
           </div>
         </div>
       </div>
