@@ -34,11 +34,11 @@ function Navbar() {
         <img
           src={toggle ? close : menu}
           alt="menu"
-          className="w-[28px] h-[28px] object-contain"
+          className="w-[28px] h-[28px] cursor-pointer object-contain"
           onClick={() => setToggle((prev) => !prev)}
         />
         {toggle && (
-          <ul className="md:hidden absolute text-sm top-[60px] right-6 flex font-semibold bg-gray-200 h-12 items-center rounded-xl px-6 font-poppins text-gray-700 space-x-6">
+          <ul className="md:hidden absolute text-sm top-[60px] right-3 flex font-semibold bg-gray-200 h-12 items-center rounded-xl px-3 font-poppins text-gray-700 space-x-3">
             <li
               onClick={() => setToggle((prev) => !prev)}
               className="cursor-pointer      hover:text-blue-600 ">
