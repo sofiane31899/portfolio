@@ -31,7 +31,7 @@ function Resume() {
       title: "Foundations of Project Management ",
       date: "Nov 2023",
       text: "Google",
-      link: "https://www.coursera.org/account/accomplishments/verify/206TPXFF867P2Y",
+      link: "https://www.coursera.org/account/accomplishments/verify/6TPXFF867P2Y",
     },
   ];
 
