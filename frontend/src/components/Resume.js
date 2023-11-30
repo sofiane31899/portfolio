@@ -25,11 +25,13 @@ function Resume() {
       title: "Advanced React",
       date: "Jul 2023",
       text: "Meta",
+      link: "https://www.coursera.org/account/accomplishments/verify/AK3BTVYSSV7R",
     },
     {
-      title: "Python ",
-      date: "Sep 2018",
-      text: " Ecole Technique - Tizi Ouzou",
+      title: "Foundations of Project Management ",
+      date: "Nov 2023",
+      text: "Google",
+      link: "https://www.coursera.org/account/accomplishments/verify/206TPXFF867P2Y",
     },
   ];
 
@@ -60,7 +62,7 @@ function Resume() {
     {
       title: "Full-Stack developer ",
       date: "May 2023 -Sep 2023 ",
-      text: "Real estate rental platform,Tizi Ouzou",
+      text: "Dr.Achaib Medical Practice,Tizi Ouzou",
       sup: [
         "Designing a user-friendly interface",
         "Developing an application with all its features",

@@ -32,18 +32,22 @@ function Project({ project }) {
               <GitHubIcon />{" "}
               <p>
                 {project.titre === "Krilli APP" ||
-                project.titre === "Medical clinic"
+                project.titre === "Medical clinic" ||
+                project.titre === "portail-scpi clone" ||
+                project.titre === "cosmetics website"
                   ? "private"
                   : "code"}
               </p>
             </a>
           </div>
           <div className="bg-white cursor-pointer hover:scale-105 ">
-            {project?.titre !== "Medical clinic" && (
-              <a href={project.live}>
-                <LanguageIcon /> live test
-              </a>
-            )}
+            {project?.titre !== "Medical clinic" &&
+              project.titre !== "portail-scpi clone" &&
+              project.titre !== "cosmetics website" && (
+                <a href={project.live}>
+                  <LanguageIcon /> live test
+                </a>
+              )}
           </div>
         </div>
       </div>

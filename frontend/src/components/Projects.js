@@ -8,6 +8,8 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import netflix from "./../assets/projects/netflix.PNG";
 import gymshark from "./../assets/gymshark.PNG";
 import card from "../assets/frontendapp.PNG";
+import Scpi from "./../assets/projects/SCPI.PNG";
+import Cosmetique from "./../assets/projects/cosmetique.PNG";
 
 function Projects() {
   const [currentProject, setCurrentProject] = useState(0);
@@ -36,6 +38,24 @@ function Projects() {
         "Our desktop application for medical practice management, built with Electron.js, React, and Tailwind CSS, streamlines patient record management, appointment scheduling, and billing for healthcare professionals. It offers a seamless, cross-platform user experience, enabling practitioners to focus on patient care.",
       image: cabinet,
       technologies: ["react", "tailwind", "electron.js"],
+      codeURL: "https://github.com/sofiane31899/",
+      live: "",
+    },
+    {
+      titre: "portail-scpi clone",
+      description:
+        "This project involves creating a web application that closely resembles portail-scpi, using a technology stack consisting of Node.js, React, and MongoDB. The goal is to replicate and offer users similar functionalities and features found on portail-scpi. By leveraging Node.js for the backend, React for the frontend, and MongoDB as the database.",
+      image: Scpi,
+      technologies: ["React", "Mongodb", "Express", "Tailwindcss"],
+      codeURL: "https://github.com/sofiane31899/",
+      live: "",
+    },
+    {
+      titre: "cosmetics website",
+      description:
+        "This project involves creating a web application that closely resembles Netflix, using a technology stack consisting of Node.js, React, and MongoDB. The goal is to replicate and offer users similar functionalities and features found on the popular streaming platform. By leveraging Node.js for the backend, React for the frontend, and MongoDB as the database.",
+      image: Cosmetique,
+      technologies: ["react", "mongodb", "express"],
       codeURL: "https://github.com/sofiane31899/",
       live: "",
     },
@@ -82,7 +102,7 @@ function Projects() {
       <div
         onClick={() => rightClick()}
         className={`${
-          currentProject == 4 ? "hidden" : "group-hover:block"
+          currentProject == 6 ? "hidden" : "group-hover:block"
         } absolute top-[50%] md:right-[10%] hidden right-3 cursor-pointer rounded-full text-2xl  text-blue-500`}>
         <ChevronRightIcon sx={{ fontSize: 40 }} />
       </div>

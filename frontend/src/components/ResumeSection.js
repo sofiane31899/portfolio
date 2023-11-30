@@ -13,7 +13,15 @@ function ResumeSection({ title, data }) {
             <div className="flex justify-start items-center border-l-[3px]  border-blue-600 ml-1 space-x-5">
               {" "}
               <div className="w-4 h-4 rounded-full border-[3px] absolute left-[54px] border-blue-600 bg-white"></div>{" "}
-              <h1 className="text-blue-600 text-xl  font-bold">{elem.title}</h1>
+              {elem.link ? (
+                <a
+                  className="text-blue-600 text-xl  font-bold cursor-pointer"
+                  href={elem?.link}>
+                  {elem.title}
+                </a>
+              ) : (
+                <p className="text-blue-600 text-xl  font-bold">{elem.title}</p>
+              )}
             </div>
             <div className="border-l-[3px] pb-5 pl-6 ml-1 border-blue-600 flex flex-col space-y-3">
               <p className="bg-gray-100 px-3 mt-2 rounded-md  font-medium w-fit ">
