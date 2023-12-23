@@ -41,15 +41,15 @@ function Projects() {
       codeURL: "https://github.com/sofiane31899/",
       live: "",
     },
-    {
-      titre: "portail-scpi clone",
-      description:
-        "This project involves creating a web application that closely resembles portail-scpi, using a technology stack consisting of Node.js, React, and MongoDB. The goal is to replicate and offer users similar functionalities and features found on portail-scpi. By leveraging Node.js for the backend, React for the frontend, and MongoDB as the database.",
-      image: Scpi,
-      technologies: ["React", "Mongodb", "Express", "Tailwindcss"],
-      codeURL: "https://github.com/sofiane31899/",
-      live: "",
-    },
+    // {
+    //   titre: "portail-scpi clone",
+    //   description:
+    //     "This project involves creating a web application that closely resembles portail-scpi, using a technology stack consisting of Node.js, React, and MongoDB. The goal is to replicate and offer users similar functionalities and features found on portail-scpi. By leveraging Node.js for the backend, React for the frontend, and MongoDB as the database.",
+    //   image: Scpi,
+    //   technologies: ["React", "Mongodb", "Express", "Tailwindcss"],
+    //   codeURL: "https://github.com/sofiane31899/",
+    //   live: "",
+    // },
     {
       titre: "cosmetics website",
       description:
